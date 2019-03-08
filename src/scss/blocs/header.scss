@@ -2,7 +2,7 @@
 {
     width:100vw;
     height:50vh;
-    background-color:yellow;
+    background-color:black;
 }
 
 .header__nav
@@ -15,19 +15,31 @@
 {
     height:100%;
     width:auto;
+    margin-left:5%;
 }
 
 .header__listContainer
 {
     @include flexbox;
-    width:25%;
+    width:20vw;
     height:100%;
-    background-color:darkgrey;
+    background-color:black;
 }
 
 .header__burger
 {
-    width:25%;
+    width:100%;
+    @include centerFlex(column);
+    background-color:rgb(150,10,10);
+    border-radius: 20%;
+
+    li
+    {
+        width:25%;
+        max-width:20px;
+        margin:3px 0px;
+
+    }
 }
 
 .header__video
