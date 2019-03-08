@@ -1,0 +1,19 @@
+@mixin flexbox($jus:space-between)
+{
+    display:flex;
+    justify-content:$jus;
+}
+
+@mixin fontFace($name, $url, $weight: "normal")
+{
+    @font-face {
+        font-family: "#{$name}";
+        src: url("../font/#{$url}.ttf") format("truetype");
+       /* url("../font/#{$url}.woff") format("woff"), //// convertir
+        url("../font/#{$url}.woff2") format("woff2");*/
+        font-weight: $weight;
+    }
+}
+
+@include fontFace("SpaceMarine", "space-marine");
+

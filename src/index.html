@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Basic site with parcel</title>
-  <link rel="stylesheet" href="scss/styles.scss">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic site with parcel</title>
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script defer src="js/app.js"></script>
 </head>
 <body>
   <header class="header">
-    <h1>It works !</h1>
+    <nav class="header__nav">
+      <img class="header__img" src="img/logo.jpg" alt="logo gameWorkshop">
+      <div class="header__listContainer">
+        <div class="header__burger"><!-- it'll be the burger -->
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+        </div>
+        <ul class="header__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Game Overview</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__videoContainer">
+      <video autoplay muted loop class="header__video" >
+        <source src="media/WarhammerIntro.mp4" type="video/mp4">
+      </video>
+    </div>
   </header>
+  <main>
+    <section></section>
+    <section></section>
+    <section></section>
+  </main>
 </body>
 </html>
+
+
+
