@@ -1,11 +1,10 @@
-.highlightedTextContainer
+.textContainer
 {
     width:100%;
     height:50vh;
     background-color:rgb(10,10,10);
     @include centerFlex();
     @include bordering();
-    
 }
 
 .highlightedTextContainer__title

@@ -31,3 +31,14 @@
     animation-duration: $dur;
     animation-iteration-count: $count;
 }
+
+@mixin bordering ()
+{
+    border-width:4.5px;
+    border-style:solid;
+    border-image:linear-gradient(
+        to left, rgba(17,17,17,1) 1%,
+        rgba(150,150,150,0.7) 50%,
+        rgba(17,17,17,1) 100%
+    ) 80% 0 80% 0/4.5px 0 4.5px 0 stretch;
+}
