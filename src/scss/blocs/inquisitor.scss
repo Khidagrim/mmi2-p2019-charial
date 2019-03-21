@@ -1,0 +1,42 @@
+.inquisitor
+{
+    background-image: url("../img/backgroundInquisitor.jpg");
+    background-repeat: no-repeat;
+    height:100vh;
+    @include flexbox();
+    flex-direction: column;
+}
+
+.inquisitor__content
+{
+    margin-top:20%;
+    height:100%;
+    padding:5%;
+}
+
+.inquisitor__text
+{
+    padding-top:10%;
+    font-size: $fontReallySmall;
+    line-height: 1.5;
+    width:80%;
+}
+
+.inquisitor__title
+{
+    color:$colorBlue;
+    font-size:$fontBig;
+    line-height: 1.2;
+}
+
+.inquisitor__read
+{
+    @include bordering;
+    @include centerFlex;
+    width:50%;
+    padding: 5% 0px;
+    font-variant: small-caps;
+    background-color:rgba(15,15,15,0.35);
+    color:$colorYellow;
+    margin-top:30%;
+}

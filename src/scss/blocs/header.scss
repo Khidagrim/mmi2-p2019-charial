@@ -17,19 +17,20 @@
     margin-left:5%;
 }
 
-.header__listContainer
+.header__list
 {
     @include flexbox;
     width:20vw;
     height:100%;
     background-color:black;
+    margin-right:5px;
 }
 
 .header__burger
 {
     width:100%;
     @include centerFlex(column);
-    background-color:rgb(150,10,10);
+    background-color:$colorRed;
     border-radius: 20%;
 
     li

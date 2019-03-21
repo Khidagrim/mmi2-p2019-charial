@@ -1,4 +1,4 @@
-.textContainer
+.text
 {
     margin:5vh 0;
     width:100%;
@@ -6,10 +6,10 @@
     @include centerFlex();
 }
 
-.textContainer__text
+.text__text
 {
     z-index:2;
-    font-size:75%;
+    font-size:$fontSmall;
     width:80%;
     color:$colorWhite;
     padding:2px 5px;
@@ -21,6 +21,6 @@
         font-size:3.5em;
         padding-right:0.2em;
         float:left;
-        color:red;
+        color:$colorLightRed;
     }
 }

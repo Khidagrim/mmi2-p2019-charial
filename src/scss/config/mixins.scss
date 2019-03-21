@@ -17,12 +17,12 @@
 
 @include fontFace("SpaceMarine", "space-marine");
 
-@mixin centerFlex($dir:row)
+@mixin centerFlex($dir:row, $space:center)
 {
     display:flex;
     flex-direction:$dir;
     align-items: center;
-    justify-content: center;
+    justify-content: $space;
 }
 
 @mixin animation($name,$dur:1s,$count:0)

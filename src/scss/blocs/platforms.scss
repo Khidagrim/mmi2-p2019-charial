@@ -1,0 +1,33 @@
+.platforms
+{
+    width:100%;
+    @include flexbox;
+}
+
+.platformsList
+{
+    @include centerFlex(column,space-between);
+    width:100%;
+}
+
+.platformsList__Item
+{
+    padding-top:2%;
+    width:80%;
+    height:30%;
+    color:white;
+    @include flexbox();
+}
+
+.platformsContainer__img
+{
+    height:75%;
+    width:auto;
+}
+
+.platformsList__price
+{
+    @include flexbox(center);
+    flex-direction:column;
+
+}
