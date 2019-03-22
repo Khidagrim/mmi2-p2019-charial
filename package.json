@@ -13,5 +13,8 @@
   "devDependencies": {
     "node-sass": "^4.10.0",
     "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "img": "^3.0.3"
   }
 }

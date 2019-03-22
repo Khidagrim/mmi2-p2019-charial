@@ -1,0 +1,27 @@
+.recentQuote
+{
+    background-attachment: scroll;
+    box-shadow: $colorBlack 0px 0px 56px 56px inset;
+    background-image: url("../img/spaceMarines.jpg");
+    width:100%;
+    height:100vh;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexCol();
+}
+
+.recentQuote__text
+{
+    padding:0px 10%;
+    color:rgba(240,240,240,0.75);
+    line-height: 150%;
+    @include flexCol();
+
+    &::after{
+        margin-top:10%;
+        content: '-- Our Emperor';
+        color:$colorWhite;
+    }
+}
