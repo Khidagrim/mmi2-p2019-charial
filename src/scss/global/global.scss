@@ -10,9 +10,15 @@
   cursor:url('../img/cursorNormal.png'),auto;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body
 {
   width:100vw;
-  overflow-x: hidden;
   background-color:$colorBlack;
+  overflow-x: hidden;
+  @include flexCol;
+  padding:0px 1%;
 }

@@ -12,18 +12,19 @@
 
 .platformsList__Item
 {
-    padding-top:2%;
-    width:80%;
+    padding:2% 0px;
     height:30%;
     color:white;
     @include flexbox(space-around);
+    width:85%;
 }
 
 .platformsContainer__img
 {
-    height:75%;
-    width:auto;
+    width:40%;
+    height:auto;
     display:block;
+    max-width:120px;
 }
 
 .platformsList__price

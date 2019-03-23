@@ -1,10 +1,10 @@
+@import "./vendors/reset";
+
 @import "./config/anim";
 @import "./config/mixins";
 @import "./config/variable";
 
 @import "./global/global";
-
-@import "./vendors/reset";
 
 @import "./blocs/header";
 @import "./blocs/highlightedText";

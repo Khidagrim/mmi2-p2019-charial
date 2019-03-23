@@ -1,31 +1,40 @@
 .header
 {
     width:100vw;
-    height:50vh;
 }
 
 .header__nav
 {
-    height:25%;
     @include flexbox;
+    height:20vh;
+    align-items: center;
 }
 
 .header__img
 {
-    height:100%;
-    width:auto;
+    display: block;
+    width:100%;
     margin-left:5%;
+    height:auto;
+    max-width: 200px;
 }
+
 
 .header__list
 {
     @include flexbox;
-    width:20vw;
-    height:100%;
+    width:15vw;
+    height:15vw;
+    max-width:75px;
+    max-height:75px;
     background-color:black;
-    margin-right:5px;
+    margin-right:2%;
+    margin-top:2%;
 
-
+    @media (min-width:768px)
+    {
+        display: none;
+    }
 }
 
 .header__burger
@@ -33,15 +42,13 @@
     width:100%;
     height: 100%;
     background-color:$colorRed;
-    padding:0.45em 0.625em;
+    padding:0px 0.625em;
     display:block;
     border-radius: 4px;
-    line-height: 1;
     @include flexCol;
 
     li
     {
-        width:75%;
         margin:3px 0px;
         height:10%;
         background-color: $colorBlack;
@@ -58,14 +65,39 @@
 .header__menu
 {
     display:none;
+    @media (min-width:768px)
+    {
+        @include flexbox(space-around);
+        align-items: center;
+        width:75%;
+        height:100%;
+        padding:0px 10% 0px 2%;
+        font-family: "SpaceMarine";
+        font-size:$fontSmall;
+    }
+}
+
+.header__menuItems
+{
+    margin:0px 1%;
+    transition:0.5s;
+    position: relative;
+    display: block;
+
+    &:hover
+    {
+        color:$colorYellow;
+        transition:0.3s;
+        transform:scale(1.1);
+    }
 }
 
 
 .header__videoContainer
 {
     width:100%;
-    height:75%;
     position:relative;
+    z-index:-1;
 
     &::after
     {
