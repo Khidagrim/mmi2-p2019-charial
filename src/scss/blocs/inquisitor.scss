@@ -12,6 +12,7 @@
     margin-top:20%;
     height:100%;
     padding:5%;
+    position: relative;
 }
 
 .inquisitor__text
@@ -38,5 +39,8 @@
     font-variant: small-caps;
     background-color:rgba(15,15,15,0.35);
     color:$colorYellow;
-    margin-top:30%;
+    position:absolute;
+    bottom: 10%;
+    left:10%;
+
 }

@@ -24,20 +24,27 @@
     height:100%;
     background-color:black;
     margin-right:5px;
+
+
 }
 
 .header__burger
 {
     width:100%;
-    @include centerFlex(column);
+    height: 100%;
     background-color:$colorRed;
-    border-radius: 20%;
+    padding:0.45em 0.625em;
+    display:block;
+    border-radius: 4px;
+    line-height: 1;
+    @include flexCol;
 
     li
     {
-        width:25%;
-        max-width:20px;
+        width:75%;
         margin:3px 0px;
+        height:10%;
+        background-color: $colorBlack;
 
     }
 }

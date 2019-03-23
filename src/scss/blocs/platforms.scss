@@ -16,13 +16,14 @@
     width:80%;
     height:30%;
     color:white;
-    @include flexbox();
+    @include flexbox(space-around);
 }
 
 .platformsContainer__img
 {
     height:75%;
     width:auto;
+    display:block;
 }
 
 .platformsList__price

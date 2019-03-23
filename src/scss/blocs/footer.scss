@@ -1,0 +1,25 @@
+.footer
+{
+    @include flexCol();
+    flex-wrap:wrap;
+
+}
+
+.footer__img
+{
+    width:45%;
+    height:auto;
+    margin:0% 2%;
+}
+
+.footer__text
+{
+    padding:5% 10%;
+    font-size:$fontSmall;
+}
+
+.footer__link
+{
+    color:$colorLightRed;
+}
+
