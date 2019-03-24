@@ -10,15 +10,15 @@
     <script defer src="js/burger.js"></script>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="#header">
     <nav class="header__nav">
       <img class="header__img" src="img/warhammer.png" alt="logo warhammer">
       <ul class="header__menu">
-        <li ><a class="header__menuItems" href="#">Home</a></li>
-        <li ><a class="header__menuItems" href="#">Game Overview</a></li>
-        <li><a class="header__menuItems" href="#">Shop</a></li>
-        <li><a class="header__menuItems" href="#">Our Team</a></li>
-        <li><a class="header__menuItems" href="#">Contact</a></li>
+        <li ><a class="header__menuItems" href="#header">Home</a></li>
+        <li ><a class="header__menuItems" href="#text">Game Overview</a></li>
+        <li><a class="header__menuItems" href="#platforms">Shop</a></li>
+        <li><a class="header__menuItems" href="#inquisitor">Warhammer Inquisitor</a></li>
+        <li><a class="header__menuItems" href="#characters">Characters</a></li>
       </ul>
       <div class="header__list">
         <div class="header__burger"><!-- it'll be the burger -->
@@ -41,7 +41,7 @@
         <span class="highlightedText__content">Fight for the Emperor!</span>
       </h2>
     </section>
-    <section class="text">
+    <section class="text" id="text">
       <p class="text__text" >
         Warhammer 40,000 is a challenging gothic 
         Real Time Strategie game about killing monstrous Xenos. 
@@ -54,7 +54,7 @@
     <section class="learnMore">
       Learn more 
     </section>
-    <section class="platforms">
+    <section class="platforms" id="platforms">
       <ul class="platformsList">
         <li class="platformsList__Item">
           <img class="platformsContainer__img" src="./img/PlayStation-Logo-White.png" alt="playstation">
@@ -70,7 +70,7 @@
         </li>
       </ul>
     </section>
-    <section class="inquisitor">
+    <section class="inquisitor" id="inquisitor">
       <article class="inquisitor__content">
         <h2 class="inquisitor__title">Warhammer Inquisitor is Available Now!</h2>
         <p class="inquisitor__text">Explore a new region and an endless quest in the latest expansion that can be experienced
@@ -78,12 +78,12 @@
         <section class="inquisitor__read" >Read More</section>
       </article>
     </section>
-    <section class="highlightedText">
+    <section class="highlightedText" id="characters">
       <h2 class="highlightedText__title">
         <span class="highlightedText__content">Characters</span>
       </h2>
     </section>
-    <section class="characters"> 
+    <section class="characters" > 
       <!-- js generated a-->
     </section>
     <section class="recentQuote">
@@ -91,13 +91,13 @@
     </section>
   </main>
   <footer class="footer">
-    <div>
+    <div class="footer__images">
         <img src="img/ESRB_2013_Teen.png" alt="esrb" class="footer__img">
         <img src="img/PEGI_16.png" alt="pegi" class="footer__img">
     </div>
       <p class="footer__text">©  COPYRIGHT ©2018 GAMES WORKSHOP. ALL RIGHTS RESERVED. SITE USE SUBJECT TO OUR 
         <a class="footer__link" href="https://www.games-workshop.com/fr-FR/Warhammer-40-000" target="_blank">PRIVACY &amp; 
-        COOKIE POLICY</a>. RETURN TO <a class="footer__link" href="#">
+        COOKIE POLICY</a>. RETURN TO <a class="footer__link" href="#header">
         HOME.</a></p>
   </footer>
 </body>

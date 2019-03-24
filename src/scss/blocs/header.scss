@@ -1,6 +1,7 @@
 .header
 {
     width:100vw;
+    position:relative
 }
 
 .header__nav
@@ -99,6 +100,7 @@
 }
 
 
+
 .header__video
 {
     height:auto;
@@ -108,6 +110,8 @@
 .header__menu
 {
     display:none;
+    height:0px;
+    font-family: "SpaceMarine";
     @media (min-width:768px)
     {
         @include flexbox(space-around);
@@ -115,10 +119,24 @@
         width:75%;
         height:100%;
         padding:0px 10% 0px 2%;
-        font-family: "SpaceMarine";
         font-size:$fontSmall;
     }
 }
+
+.header__menu--open
+{
+    transition:1s;
+    height:80vh;
+    position:absolute;
+    background-color: $colorBlack;
+    @include flexCol();
+    width:100vw;
+    top:20vh;
+    left:0px;
+    z-index:1000;
+    text-align:center;
+}
+
 
 .header__menuItems
 {

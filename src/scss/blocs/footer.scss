@@ -11,6 +11,19 @@
     height:auto;
     margin:0% 2%;
     max-width: 200px;
+
+    @media (min-width:400px)
+    {
+        align-self: center;
+    }
+}
+
+.footer__images
+{
+    @media (min-width:400px)
+    {
+        @include flexbox(space-around);
+    }
 }
 
 .footer__text
