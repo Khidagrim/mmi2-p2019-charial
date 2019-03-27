@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="scss/styles.scss">
     <script defer src="js/characters.js"></script>
     <script defer src="js/burger.js"></script>
+    <script defer src="js/appearOnScroll.js"></script>
+    <script defer src="js/changeImgColor.js"></script>
 </head>
 <body>
   <header class="header" id="#header">
@@ -72,10 +74,10 @@
     </section>
     <section class="inquisitor" id="inquisitor">
       <article class="inquisitor__content">
-        <h2 class="inquisitor__title">Warhammer Inquisitor is Available Now!</h2>
-        <p class="inquisitor__text">Explore a new region and an endless quest in the latest expansion that can be experienced
+        <h2 class="inquisitor__title beforeOnScroll">Warhammer Inquisitor is Available Now!</h2>
+        <p class="inquisitor__text beforeOnScroll">Explore a new region and an endless quest in the latest expansion that can be experienced
            alongside Warhammer’s main campaign and other expansions.</p>
-        <section class="inquisitor__read" >Read More</section>
+        <section class="inquisitor__read beforeOnScroll" >Read More</section>
       </article>
     </section>
     <section class="highlightedText" id="characters">
@@ -86,8 +88,8 @@
     <section class="characters" > 
       <!-- js generated a-->
     </section>
-    <section class="recentQuote">
-       <blockquote class="recentQuote__text">" Even a man who has nothing can still offer his life. "</blockquote>
+    <section class="recentQuote ">
+       <blockquote class="recentQuote__text">" Even a man who has nothing can still offer his <span class="recentQuote__text--blood">life</span>. "</blockquote>
     </section>
   </main>
   <footer class="footer">

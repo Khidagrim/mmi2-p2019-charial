@@ -1,0 +1,14 @@
+.beforeOnScroll
+{
+    opacity: 0;
+    transform: translateX(250px);
+    position: absolute;
+}
+
+.afterOnScroll
+{
+    opacity: 1;
+    transition: 1s;
+    transform: translateX(0px);
+}
+

@@ -49,3 +49,19 @@
     flex-direction:column;
     justify-content: $pos;
 }
+
+@mixin coloredFilter ($color:black, $op:0.2) 
+{
+    &::after
+    {
+        opacity: $op;
+        background-color: $color;
+        content:'';
+        display:block;
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+    } 
+}

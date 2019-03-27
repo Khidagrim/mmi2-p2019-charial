@@ -160,16 +160,5 @@
     position:relative;
     z-index:-1;
 
-    &::after
-    {
-        opacity: 0.2;
-        background-color: black;
-        content:'';
-        display:block;
-        position: absolute;
-        top:0;
-        left:0;
-        bottom:0;
-        right:0;
-    }
+    @include coloredFilter();
 }

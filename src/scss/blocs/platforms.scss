@@ -33,3 +33,9 @@
     flex-direction:column;
 
 }
+
+.platformsList__Item--clicked
+{
+    position:relative;
+    @include coloredFilter($colorLightRed,0.5);
+}

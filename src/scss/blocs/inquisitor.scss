@@ -1,10 +1,19 @@
 .inquisitor
 {
-    background-image: url("../img/backgroundInquisitor.jpg");
+    background-image: url("../img/inquisitorBGsmall.jpg");
     background-repeat: no-repeat;
     height:100vh;
     @include flexbox();
     flex-direction: column;
+    background-size: cover;
+    @media (min-width:500px)
+    {
+        background-image: url("../img/inquisitorBGmedium.jpg");
+    }
+    @media (min-width:1000px)
+    {
+        background-image: url("../img/inquisitorBGlarge.jpg");
+    }
 }
 
 .inquisitor__content
@@ -21,6 +30,11 @@
     font-size: $fontReallySmall;
     line-height: 1.5;
     width:80%;
+
+    @media (min-width:500px)
+    {
+        font-size: $fontSmall;
+    }
 }
 
 .inquisitor__title
@@ -35,7 +49,7 @@
     @include bordering;
     @include centerFlex;
     width:50%;
-    padding: 5% 0px;
+    padding: 3% 0px;
     font-variant: small-caps;
     background-color:rgba(15,15,15,0.35);
     color:$colorYellow;
