@@ -16,7 +16,8 @@
     max-width:250px;
     max-height:250px;
 
-    &:hover{
+    &:hover:not(.characters__item--show)
+    {
         transform: scale(1.1);
         transition:0.4s;
     }
